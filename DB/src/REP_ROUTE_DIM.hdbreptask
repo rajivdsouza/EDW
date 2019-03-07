@@ -1,0 +1,89 @@
+<RepTask Name="REP_ROUTE_DIM" Description="" Type="REALTIME" RepVersion="2.0">
+  <SourceObjects SourceType="OracleLogReaderAdapter" TTFullyQualifiedName="FALSE" VTFullyQualifiedName="FALSE" RemoteSourceName="RS_ORA_EDW" VirtualTableSchema="">
+    <SourceObject RemoteObjectUniqueName="&quot;EDW&quot;.&quot;ROUTE_DIM&quot;" SourceDisplayName="ROUTE_DIM">
+      <SourceColumns>
+        <SourceColumn Name="ROUTE_SKEY" Datatype="DECIMAL" Length="0" Nullable="false" PartOfPrimaryKey="false" Precision="0" Scale="0">
+        </SourceColumn>
+        <SourceColumn Name="ROUTE_ID" Datatype="NVARCHAR" Length="6" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="CLIENT_ID" Datatype="NVARCHAR" Length="3" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="SETID" Datatype="NVARCHAR" Length="5" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="ROUTE_SDESC" Datatype="NVARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="DW_START_DT" Datatype="TIMESTAMP" Length="27" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="DW_STOP_DT" Datatype="TIMESTAMP" Length="27" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="DW_INSERT_DT" Datatype="TIMESTAMP" Length="27" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="DW_UPDATE_DT" Datatype="TIMESTAMP" Length="27" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="DW_ERROR_FLAG" Datatype="NVARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="DW_CURRENT_ROW_FLAG" Datatype="NVARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+      </SourceColumns>
+    </SourceObject>
+    <Annotations Key="sap.im.properties">
+      <Annotation Key="cdc" Value="true"/>
+    </Annotations>
+  </SourceObjects>
+  <TargetObjects>
+    <TargetObject ObjectName="ROUTE_DIM" Type="TABLE">
+      <TargetColumns>
+        <TargetColumn Name="ROUTE_SKEY" Datatype="DECIMAL" Length="0" Nullable="false" PartOfPrimaryKey="false" Precision="0" Scale="0">
+        </TargetColumn>
+        <TargetColumn Name="ROUTE_ID" Datatype="NVARCHAR" Length="6" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="CLIENT_ID" Datatype="NVARCHAR" Length="3" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="SETID" Datatype="NVARCHAR" Length="5" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="ROUTE_SDESC" Datatype="NVARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="DW_START_DT" Datatype="TIMESTAMP" Length="27" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="DW_STOP_DT" Datatype="TIMESTAMP" Length="27" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="DW_INSERT_DT" Datatype="TIMESTAMP" Length="27" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="DW_UPDATE_DT" Datatype="TIMESTAMP" Length="27" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="DW_ERROR_FLAG" Datatype="NVARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="DW_CURRENT_ROW_FLAG" Datatype="NVARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+      </TargetColumns>
+    </TargetObject>
+  </TargetObjects>
+  <Mappings>
+    <Mapping ObjectName="ROUTE_DIM" RemoteObjectUniqueName="&quot;EDW&quot;.&quot;ROUTE_DIM&quot;" ReplicationBehavior="InitAndRealtime" VTObjectName="VT_ROUTE_DIM">
+      <TargetColumns>
+        <TargetColumn Name="ROUTE_SKEY" ProjectionExpression="&quot;ROUTE_SKEY&quot;">
+        </TargetColumn>
+        <TargetColumn Name="ROUTE_ID" ProjectionExpression="&quot;ROUTE_ID&quot;">
+        </TargetColumn>
+        <TargetColumn Name="CLIENT_ID" ProjectionExpression="&quot;CLIENT_ID&quot;">
+        </TargetColumn>
+        <TargetColumn Name="SETID" ProjectionExpression="&quot;SETID&quot;">
+        </TargetColumn>
+        <TargetColumn Name="ROUTE_SDESC" ProjectionExpression="&quot;ROUTE_SDESC&quot;">
+        </TargetColumn>
+        <TargetColumn Name="DW_START_DT" ProjectionExpression="&quot;DW_START_DT&quot;">
+        </TargetColumn>
+        <TargetColumn Name="DW_STOP_DT" ProjectionExpression="&quot;DW_STOP_DT&quot;">
+        </TargetColumn>
+        <TargetColumn Name="DW_INSERT_DT" ProjectionExpression="&quot;DW_INSERT_DT&quot;">
+        </TargetColumn>
+        <TargetColumn Name="DW_UPDATE_DT" ProjectionExpression="&quot;DW_UPDATE_DT&quot;">
+        </TargetColumn>
+        <TargetColumn Name="DW_ERROR_FLAG" ProjectionExpression="&quot;DW_ERROR_FLAG&quot;">
+        </TargetColumn>
+        <TargetColumn Name="DW_CURRENT_ROW_FLAG" ProjectionExpression="&quot;DW_CURRENT_ROW_FLAG&quot;">
+        </TargetColumn>
+      </TargetColumns>
+    </Mapping>
+  </Mappings>
+</RepTask>

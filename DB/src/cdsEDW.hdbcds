@@ -1,0 +1,4 @@
+namespace EDW.DB;
+
+context cdsEDW {
+};

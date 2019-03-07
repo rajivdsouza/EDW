@@ -1,0 +1,695 @@
+<RepTask Name="REP_CUSTOMER_DIM" Description="" Type="REALTIME" RepVersion="2.0">
+  <SourceObjects SourceType="OracleLogReaderAdapter" TTFullyQualifiedName="FALSE" VTFullyQualifiedName="FALSE" RemoteSourceName="RS_ORA_EDW" VirtualTableSchema="">
+    <SourceObject RemoteObjectUniqueName="&quot;EDW&quot;.&quot;CUSTOMER_DIM&quot;" SourceDisplayName="CUSTOMER_DIM">
+      <SourceColumns>
+        <SourceColumn Name="CUSTOMER_SKEY" Datatype="DECIMAL" Length="0" Nullable="false" PartOfPrimaryKey="true" Precision="0" Scale="0">
+        </SourceColumn>
+        <SourceColumn Name="CUSTOMER_ID" Datatype="NVARCHAR" Length="30" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="STORE_ID" Datatype="NVARCHAR" Length="20" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="CUSTOMER_NAME" Datatype="NVARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="CUSTOMER_NAME2" Datatype="NVARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="CUSTOMER_TYPE" Datatype="NVARCHAR" Length="30" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="ADDRESS_LINE1" Datatype="NVARCHAR" Length="50" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="ADDRESS_LINE2" Datatype="NVARCHAR" Length="50" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="CITY" Datatype="NVARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="STATE" Datatype="NVARCHAR" Length="2" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="ZIP" Datatype="NVARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="ZIP4" Datatype="NVARCHAR" Length="4" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="COUNTY" Datatype="NVARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="PHONE_LAN" Datatype="NVARCHAR" Length="15" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="PHONE_FAX" Datatype="NVARCHAR" Length="15" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="NATIONAL_CHAIN" Datatype="DECIMAL" Length="0" Nullable="true" PartOfPrimaryKey="false" Precision="0" Scale="0">
+        </SourceColumn>
+        <SourceColumn Name="AGENCY" Datatype="DECIMAL" Length="0" Nullable="true" PartOfPrimaryKey="false" Precision="0" Scale="0">
+        </SourceColumn>
+        <SourceColumn Name="INSURANCE_CERT" Datatype="DECIMAL" Length="0" Nullable="true" PartOfPrimaryKey="false" Precision="0" Scale="0">
+        </SourceColumn>
+        <SourceColumn Name="CUSTOMER_GROUP_ID" Datatype="NVARCHAR" Length="4" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="CUSTOMER_GROUP_DESC" Datatype="NVARCHAR" Length="50" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="CONTACT_NAME" Datatype="NVARCHAR" Length="20" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="CONTACT_ADDR_LINE1" Datatype="NVARCHAR" Length="50" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="CONTACT_ADDR_LINE2" Datatype="NVARCHAR" Length="50" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="CONTACT_PHONE_LAN" Datatype="NVARCHAR" Length="15" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="CONTACT_EMAIL" Datatype="NVARCHAR" Length="25" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="EDI_CONTACT_NAME" Datatype="NVARCHAR" Length="20" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="PAYMENT_TERMS" Datatype="NVARCHAR" Length="5" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="REGION_ID" Datatype="NVARCHAR" Length="4" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="REGION_DESC" Datatype="NVARCHAR" Length="25" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="DW_INSERT_DT" Datatype="TIMESTAMP" Length="27" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="DW_UPDATE_DT" Datatype="TIMESTAMP" Length="27" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="DW_ERROR_FLAG" Datatype="NVARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="SETID" Datatype="NVARCHAR" Length="5" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="CLIENT_ID" Datatype="NVARCHAR" Length="3" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="DW_CURRENT_ROW_FLAG" Datatype="NVARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="DW_START_DT" Datatype="TIMESTAMP" Length="27" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="DW_STOP_DT" Datatype="TIMESTAMP" Length="27" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="SOLD_TO_FLAG" Datatype="NVARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="BILL_TO_FLAG" Datatype="NVARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="SHIP_TO_FLAG" Datatype="NVARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="PAYER_FLAG" Datatype="NVARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="INDUSTRY_ID" Datatype="NVARCHAR" Length="4" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="INDUSTRY_DESC" Datatype="NVARCHAR" Length="30" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="PARENT_CUSTOMER_ID" Datatype="NVARCHAR" Length="20" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="PARENT_CUSTOMER_NAME" Datatype="NVARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="MSA_CODE" Datatype="SMALLINT" Length="0" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="MSA_NAME" Datatype="VARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="MSA_TYPE" Datatype="VARCHAR" Length="4" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="DMA_CODE" Datatype="SMALLINT" Length="0" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="DMA_NAME" Datatype="VARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="IRI_MARKET_NAME" Datatype="VARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="IRI_REGION_NAME" Datatype="VARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="PAYMENT_TERMS_DESC" Datatype="VARCHAR" Length="50" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="COUNTRY" Datatype="NVARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="CGP_CUSTOMER_SKEY" Datatype="DECIMAL" Length="38" Nullable="false" PartOfPrimaryKey="false" Precision="38" Scale="0">
+        </SourceColumn>
+        <SourceColumn Name="CGP_CUST_SHIP_TO_SKEY" Datatype="DECIMAL" Length="38" Nullable="false" PartOfPrimaryKey="false" Precision="38" Scale="0">
+        </SourceColumn>
+        <SourceColumn Name="MILEAGE" Datatype="DECIMAL" Length="0" Nullable="true" PartOfPrimaryKey="false" Precision="0" Scale="0">
+        </SourceColumn>
+        <SourceColumn Name="NET_PROFIT_TYPE" Datatype="NVARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="DW_STATUS_FLAG" Datatype="NVARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="CALIFORNIA_MILL_TAX_FLAG" Datatype="NVARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="CUSTOMER_TYPE_ID" Datatype="NVARCHAR" Length="4" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="SALES_PERSON_1_SKEY" Datatype="DECIMAL" Length="38" Nullable="true" PartOfPrimaryKey="false" Precision="38" Scale="0">
+        </SourceColumn>
+        <SourceColumn Name="SALES_PERSON_2_SKEY" Datatype="DECIMAL" Length="38" Nullable="true" PartOfPrimaryKey="false" Precision="38" Scale="0">
+        </SourceColumn>
+        <SourceColumn Name="SALES_PERSON_3_SKEY" Datatype="DECIMAL" Length="38" Nullable="true" PartOfPrimaryKey="false" Precision="38" Scale="0">
+        </SourceColumn>
+        <SourceColumn Name="ACCOUNT_ASSIGNMENT_GROUP_ID" Datatype="NVARCHAR" Length="2" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="TELEPHONE_AREA_CODE" Datatype="SMALLINT" Length="0" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="COUNTY_FIPS_CODE" Datatype="INTEGER" Length="0" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="TIME_ZONE_DESC" Datatype="VARCHAR" Length="5" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="DST_FLAG" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="LONGITUDE_NUMBER" Datatype="DECIMAL" Length="0" Nullable="true" PartOfPrimaryKey="false" Precision="0" Scale="0">
+        </SourceColumn>
+        <SourceColumn Name="LATITUDE_NUMBER" Datatype="DECIMAL" Length="0" Nullable="true" PartOfPrimaryKey="false" Precision="0" Scale="0">
+        </SourceColumn>
+        <SourceColumn Name="MSTR_CUSTOMER_SKEY" Datatype="DECIMAL" Length="38" Nullable="true" PartOfPrimaryKey="false" Precision="38" Scale="0">
+        </SourceColumn>
+        <SourceColumn Name="GEOCODE_LATITUDE" Datatype="DECIMAL" Length="0" Nullable="true" PartOfPrimaryKey="false" Precision="0" Scale="0">
+        </SourceColumn>
+        <SourceColumn Name="GEOCODE_LONGITUDE" Datatype="DECIMAL" Length="0" Nullable="true" PartOfPrimaryKey="false" Precision="0" Scale="0">
+        </SourceColumn>
+        <SourceColumn Name="MDM_ACTIVE_FLAG" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="GEOCODE_LEVEL" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="DC_STORE_FLAG" Datatype="NVARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="INDUSTRY1_CODE" Datatype="VARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="INDUSTRY1_DESC" Datatype="VARCHAR" Length="20" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="EGP_CONVERT" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="CUSTOMER_STATUS" Datatype="VARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="DROP_SHIP_CUSTOMER_FLAG" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="EMPLOYEE_FLAG" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="INTER_COMPANY_FLAG" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="STORE_GLN_IDENTIFICATION_VALUE" Datatype="VARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="WILD_CONVERT" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="DW_INSERT_SOURCELOAD_SKEY" Datatype="DECIMAL" Length="38" Nullable="true" PartOfPrimaryKey="false" Precision="38" Scale="0">
+        </SourceColumn>
+        <SourceColumn Name="DW_UPDATE_SOURCELOAD_SKEY" Datatype="DECIMAL" Length="38" Nullable="true" PartOfPrimaryKey="false" Precision="38" Scale="0">
+        </SourceColumn>
+        <SourceColumn Name="CREDIT_LIMIT" Datatype="VARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="R7_CONV" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="FIRST_SALE_DT" Datatype="TIMESTAMP" Length="27" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="NEW_CUSTOMER_PLANNING_FLAG" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="NEW_CUSTOMER_PLANNING_EFF_DT" Datatype="TIMESTAMP" Length="27" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="NEW_CUSTOMER_TRACKING_FLAG" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="NEW_CUSTOMER_TRACKING_EFF_DT" Datatype="TIMESTAMP" Length="27" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="NEW_CUSTOMER_TRACKING_PERIODS" Datatype="SMALLINT" Length="0" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="LAST_SALE_DT" Datatype="TIMESTAMP" Length="27" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="DW_ACTIVITY_RANK_GROUP" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="DW_PROCESS_ID" Datatype="NVARCHAR" Length="20" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="DW_USER_ID" Datatype="NVARCHAR" Length="20" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="COUNTY_TAX_JURISDICTION_CODE" Datatype="VARCHAR" Length="3" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="INDUSTRY2_CODE" Datatype="VARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="INDUSTRY2_DESC" Datatype="VARCHAR" Length="20" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="TPAC_CONV" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="BREED_CONV" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="FP_CONV" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="HJE_CONV" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="WILD_CONV" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="CUST_ACTUAL_WHSE" Datatype="VARCHAR" Length="5" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="BELL_REGION_NAME" Datatype="VARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="BELL_DISTRICT_ID" Datatype="VARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+        <SourceColumn Name="BELL_MARKET_NAME" Datatype="VARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+      </SourceColumns>
+    </SourceObject>
+    <Annotations Key="sap.im.properties">
+      <Annotation Key="cdc" Value="true"/>
+    </Annotations>
+  </SourceObjects>
+  <TargetObjects>
+    <TargetObject ObjectName="CUSTOMER_DIM" Type="TABLE">
+      <TargetColumns>
+        <TargetColumn Name="CUSTOMER_SKEY" Datatype="DECIMAL" Length="0" Nullable="false" PartOfPrimaryKey="true" Precision="0" Scale="0">
+        </TargetColumn>
+        <TargetColumn Name="CUSTOMER_ID" Datatype="NVARCHAR" Length="30" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="STORE_ID" Datatype="NVARCHAR" Length="20" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="CUSTOMER_NAME" Datatype="NVARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="CUSTOMER_NAME2" Datatype="NVARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="CUSTOMER_TYPE" Datatype="NVARCHAR" Length="30" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="ADDRESS_LINE1" Datatype="NVARCHAR" Length="50" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="ADDRESS_LINE2" Datatype="NVARCHAR" Length="50" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="CITY" Datatype="NVARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="STATE" Datatype="NVARCHAR" Length="2" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="ZIP" Datatype="NVARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="ZIP4" Datatype="NVARCHAR" Length="4" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="COUNTY" Datatype="NVARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="PHONE_LAN" Datatype="NVARCHAR" Length="15" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="PHONE_FAX" Datatype="NVARCHAR" Length="15" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="NATIONAL_CHAIN" Datatype="DECIMAL" Length="0" Nullable="true" PartOfPrimaryKey="false" Precision="0" Scale="0">
+        </TargetColumn>
+        <TargetColumn Name="AGENCY" Datatype="DECIMAL" Length="0" Nullable="true" PartOfPrimaryKey="false" Precision="0" Scale="0">
+        </TargetColumn>
+        <TargetColumn Name="INSURANCE_CERT" Datatype="DECIMAL" Length="0" Nullable="true" PartOfPrimaryKey="false" Precision="0" Scale="0">
+        </TargetColumn>
+        <TargetColumn Name="CUSTOMER_GROUP_ID" Datatype="NVARCHAR" Length="4" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="CUSTOMER_GROUP_DESC" Datatype="NVARCHAR" Length="50" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="CONTACT_NAME" Datatype="NVARCHAR" Length="20" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="CONTACT_ADDR_LINE1" Datatype="NVARCHAR" Length="50" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="CONTACT_ADDR_LINE2" Datatype="NVARCHAR" Length="50" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="CONTACT_PHONE_LAN" Datatype="NVARCHAR" Length="15" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="CONTACT_EMAIL" Datatype="NVARCHAR" Length="25" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="EDI_CONTACT_NAME" Datatype="NVARCHAR" Length="20" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="PAYMENT_TERMS" Datatype="NVARCHAR" Length="5" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="REGION_ID" Datatype="NVARCHAR" Length="4" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="REGION_DESC" Datatype="NVARCHAR" Length="25" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="DW_INSERT_DT" Datatype="TIMESTAMP" Length="27" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="DW_UPDATE_DT" Datatype="TIMESTAMP" Length="27" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="DW_ERROR_FLAG" Datatype="NVARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="SETID" Datatype="NVARCHAR" Length="5" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="CLIENT_ID" Datatype="NVARCHAR" Length="3" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="DW_CURRENT_ROW_FLAG" Datatype="NVARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="DW_START_DT" Datatype="TIMESTAMP" Length="27" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="DW_STOP_DT" Datatype="TIMESTAMP" Length="27" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="SOLD_TO_FLAG" Datatype="NVARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="BILL_TO_FLAG" Datatype="NVARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="SHIP_TO_FLAG" Datatype="NVARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="PAYER_FLAG" Datatype="NVARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="INDUSTRY_ID" Datatype="NVARCHAR" Length="4" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="INDUSTRY_DESC" Datatype="NVARCHAR" Length="30" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="PARENT_CUSTOMER_ID" Datatype="NVARCHAR" Length="20" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="PARENT_CUSTOMER_NAME" Datatype="NVARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="MSA_CODE" Datatype="SMALLINT" Length="0" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="MSA_NAME" Datatype="VARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="MSA_TYPE" Datatype="VARCHAR" Length="4" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="DMA_CODE" Datatype="SMALLINT" Length="0" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="DMA_NAME" Datatype="VARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="IRI_MARKET_NAME" Datatype="VARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="IRI_REGION_NAME" Datatype="VARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="PAYMENT_TERMS_DESC" Datatype="VARCHAR" Length="50" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="COUNTRY" Datatype="NVARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="CGP_CUSTOMER_SKEY" Datatype="DECIMAL" Length="38" Nullable="false" PartOfPrimaryKey="false" Precision="38" Scale="0">
+        </TargetColumn>
+        <TargetColumn Name="CGP_CUST_SHIP_TO_SKEY" Datatype="DECIMAL" Length="38" Nullable="false" PartOfPrimaryKey="false" Precision="38" Scale="0">
+        </TargetColumn>
+        <TargetColumn Name="MILEAGE" Datatype="DECIMAL" Length="0" Nullable="true" PartOfPrimaryKey="false" Precision="0" Scale="0">
+        </TargetColumn>
+        <TargetColumn Name="NET_PROFIT_TYPE" Datatype="NVARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="DW_STATUS_FLAG" Datatype="NVARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="CALIFORNIA_MILL_TAX_FLAG" Datatype="NVARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="CUSTOMER_TYPE_ID" Datatype="NVARCHAR" Length="4" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="SALES_PERSON_1_SKEY" Datatype="DECIMAL" Length="38" Nullable="true" PartOfPrimaryKey="false" Precision="38" Scale="0">
+        </TargetColumn>
+        <TargetColumn Name="SALES_PERSON_2_SKEY" Datatype="DECIMAL" Length="38" Nullable="true" PartOfPrimaryKey="false" Precision="38" Scale="0">
+        </TargetColumn>
+        <TargetColumn Name="SALES_PERSON_3_SKEY" Datatype="DECIMAL" Length="38" Nullable="true" PartOfPrimaryKey="false" Precision="38" Scale="0">
+        </TargetColumn>
+        <TargetColumn Name="ACCOUNT_ASSIGNMENT_GROUP_ID" Datatype="NVARCHAR" Length="2" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="TELEPHONE_AREA_CODE" Datatype="SMALLINT" Length="0" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="COUNTY_FIPS_CODE" Datatype="INTEGER" Length="0" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="TIME_ZONE_DESC" Datatype="VARCHAR" Length="5" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="DST_FLAG" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="LONGITUDE_NUMBER" Datatype="DECIMAL" Length="0" Nullable="true" PartOfPrimaryKey="false" Precision="0" Scale="0">
+        </TargetColumn>
+        <TargetColumn Name="LATITUDE_NUMBER" Datatype="DECIMAL" Length="0" Nullable="true" PartOfPrimaryKey="false" Precision="0" Scale="0">
+        </TargetColumn>
+        <TargetColumn Name="MSTR_CUSTOMER_SKEY" Datatype="DECIMAL" Length="38" Nullable="true" PartOfPrimaryKey="false" Precision="38" Scale="0">
+        </TargetColumn>
+        <TargetColumn Name="GEOCODE_LATITUDE" Datatype="DECIMAL" Length="0" Nullable="true" PartOfPrimaryKey="false" Precision="0" Scale="0">
+        </TargetColumn>
+        <TargetColumn Name="GEOCODE_LONGITUDE" Datatype="DECIMAL" Length="0" Nullable="true" PartOfPrimaryKey="false" Precision="0" Scale="0">
+        </TargetColumn>
+        <TargetColumn Name="MDM_ACTIVE_FLAG" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="GEOCODE_LEVEL" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="DC_STORE_FLAG" Datatype="NVARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="INDUSTRY1_CODE" Datatype="VARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="INDUSTRY1_DESC" Datatype="VARCHAR" Length="20" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="EGP_CONVERT" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="CUSTOMER_STATUS" Datatype="VARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="DROP_SHIP_CUSTOMER_FLAG" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="EMPLOYEE_FLAG" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="INTER_COMPANY_FLAG" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="STORE_GLN_IDENTIFICATION_VALUE" Datatype="VARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="WILD_CONVERT" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="DW_INSERT_SOURCELOAD_SKEY" Datatype="DECIMAL" Length="38" Nullable="true" PartOfPrimaryKey="false" Precision="38" Scale="0">
+        </TargetColumn>
+        <TargetColumn Name="DW_UPDATE_SOURCELOAD_SKEY" Datatype="DECIMAL" Length="38" Nullable="true" PartOfPrimaryKey="false" Precision="38" Scale="0">
+        </TargetColumn>
+        <TargetColumn Name="CREDIT_LIMIT" Datatype="VARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="R7_CONV" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="FIRST_SALE_DT" Datatype="TIMESTAMP" Length="27" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="NEW_CUSTOMER_PLANNING_FLAG" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="NEW_CUSTOMER_PLANNING_EFF_DT" Datatype="TIMESTAMP" Length="27" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="NEW_CUSTOMER_TRACKING_FLAG" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="NEW_CUSTOMER_TRACKING_EFF_DT" Datatype="TIMESTAMP" Length="27" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="NEW_CUSTOMER_TRACKING_PERIODS" Datatype="SMALLINT" Length="0" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="LAST_SALE_DT" Datatype="TIMESTAMP" Length="27" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="DW_ACTIVITY_RANK_GROUP" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="DW_PROCESS_ID" Datatype="NVARCHAR" Length="20" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="DW_USER_ID" Datatype="NVARCHAR" Length="20" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="COUNTY_TAX_JURISDICTION_CODE" Datatype="VARCHAR" Length="3" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="INDUSTRY2_CODE" Datatype="VARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="INDUSTRY2_DESC" Datatype="VARCHAR" Length="20" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="TPAC_CONV" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="BREED_CONV" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="FP_CONV" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="HJE_CONV" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="WILD_CONV" Datatype="VARCHAR" Length="1" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="CUST_ACTUAL_WHSE" Datatype="VARCHAR" Length="5" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="BELL_REGION_NAME" Datatype="VARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="BELL_DISTRICT_ID" Datatype="VARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+        <TargetColumn Name="BELL_MARKET_NAME" Datatype="VARCHAR" Length="60" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+      </TargetColumns>
+    </TargetObject>
+  </TargetObjects>
+  <Mappings>
+    <Mapping ObjectName="CUSTOMER_DIM" RemoteObjectUniqueName="&quot;EDW&quot;.&quot;CUSTOMER_DIM&quot;" ReplicationBehavior="InitAndRealtime" VTObjectName="VT_CUSTOMER_DIM">
+      <TargetColumns>
+        <TargetColumn Name="CUSTOMER_SKEY" ProjectionExpression="&quot;CUSTOMER_SKEY&quot;">
+        </TargetColumn>
+        <TargetColumn Name="CUSTOMER_ID" ProjectionExpression="&quot;CUSTOMER_ID&quot;">
+        </TargetColumn>
+        <TargetColumn Name="STORE_ID" ProjectionExpression="&quot;STORE_ID&quot;">
+        </TargetColumn>
+        <TargetColumn Name="CUSTOMER_NAME" ProjectionExpression="&quot;CUSTOMER_NAME&quot;">
+        </TargetColumn>
+        <TargetColumn Name="CUSTOMER_NAME2" ProjectionExpression="&quot;CUSTOMER_NAME2&quot;">
+        </TargetColumn>
+        <TargetColumn Name="CUSTOMER_TYPE" ProjectionExpression="&quot;CUSTOMER_TYPE&quot;">
+        </TargetColumn>
+        <TargetColumn Name="ADDRESS_LINE1" ProjectionExpression="&quot;ADDRESS_LINE1&quot;">
+        </TargetColumn>
+        <TargetColumn Name="ADDRESS_LINE2" ProjectionExpression="&quot;ADDRESS_LINE2&quot;">
+        </TargetColumn>
+        <TargetColumn Name="CITY" ProjectionExpression="&quot;CITY&quot;">
+        </TargetColumn>
+        <TargetColumn Name="STATE" ProjectionExpression="&quot;STATE&quot;">
+        </TargetColumn>
+        <TargetColumn Name="ZIP" ProjectionExpression="&quot;ZIP&quot;">
+        </TargetColumn>
+        <TargetColumn Name="ZIP4" ProjectionExpression="&quot;ZIP4&quot;">
+        </TargetColumn>
+        <TargetColumn Name="COUNTY" ProjectionExpression="&quot;COUNTY&quot;">
+        </TargetColumn>
+        <TargetColumn Name="PHONE_LAN" ProjectionExpression="&quot;PHONE_LAN&quot;">
+        </TargetColumn>
+        <TargetColumn Name="PHONE_FAX" ProjectionExpression="&quot;PHONE_FAX&quot;">
+        </TargetColumn>
+        <TargetColumn Name="NATIONAL_CHAIN" ProjectionExpression="&quot;NATIONAL_CHAIN&quot;">
+        </TargetColumn>
+        <TargetColumn Name="AGENCY" ProjectionExpression="&quot;AGENCY&quot;">
+        </TargetColumn>
+        <TargetColumn Name="INSURANCE_CERT" ProjectionExpression="&quot;INSURANCE_CERT&quot;">
+        </TargetColumn>
+        <TargetColumn Name="CUSTOMER_GROUP_ID" ProjectionExpression="&quot;CUSTOMER_GROUP_ID&quot;">
+        </TargetColumn>
+        <TargetColumn Name="CUSTOMER_GROUP_DESC" ProjectionExpression="&quot;CUSTOMER_GROUP_DESC&quot;">
+        </TargetColumn>
+        <TargetColumn Name="CONTACT_NAME" ProjectionExpression="&quot;CONTACT_NAME&quot;">
+        </TargetColumn>
+        <TargetColumn Name="CONTACT_ADDR_LINE1" ProjectionExpression="&quot;CONTACT_ADDR_LINE1&quot;">
+        </TargetColumn>
+        <TargetColumn Name="CONTACT_ADDR_LINE2" ProjectionExpression="&quot;CONTACT_ADDR_LINE2&quot;">
+        </TargetColumn>
+        <TargetColumn Name="CONTACT_PHONE_LAN" ProjectionExpression="&quot;CONTACT_PHONE_LAN&quot;">
+        </TargetColumn>
+        <TargetColumn Name="CONTACT_EMAIL" ProjectionExpression="&quot;CONTACT_EMAIL&quot;">
+        </TargetColumn>
+        <TargetColumn Name="EDI_CONTACT_NAME" ProjectionExpression="&quot;EDI_CONTACT_NAME&quot;">
+        </TargetColumn>
+        <TargetColumn Name="PAYMENT_TERMS" ProjectionExpression="&quot;PAYMENT_TERMS&quot;">
+        </TargetColumn>
+        <TargetColumn Name="REGION_ID" ProjectionExpression="&quot;REGION_ID&quot;">
+        </TargetColumn>
+        <TargetColumn Name="REGION_DESC" ProjectionExpression="&quot;REGION_DESC&quot;">
+        </TargetColumn>
+        <TargetColumn Name="DW_INSERT_DT" ProjectionExpression="&quot;DW_INSERT_DT&quot;">
+        </TargetColumn>
+        <TargetColumn Name="DW_UPDATE_DT" ProjectionExpression="&quot;DW_UPDATE_DT&quot;">
+        </TargetColumn>
+        <TargetColumn Name="DW_ERROR_FLAG" ProjectionExpression="&quot;DW_ERROR_FLAG&quot;">
+        </TargetColumn>
+        <TargetColumn Name="SETID" ProjectionExpression="&quot;SETID&quot;">
+        </TargetColumn>
+        <TargetColumn Name="CLIENT_ID" ProjectionExpression="&quot;CLIENT_ID&quot;">
+        </TargetColumn>
+        <TargetColumn Name="DW_CURRENT_ROW_FLAG" ProjectionExpression="&quot;DW_CURRENT_ROW_FLAG&quot;">
+        </TargetColumn>
+        <TargetColumn Name="DW_START_DT" ProjectionExpression="&quot;DW_START_DT&quot;">
+        </TargetColumn>
+        <TargetColumn Name="DW_STOP_DT" ProjectionExpression="&quot;DW_STOP_DT&quot;">
+        </TargetColumn>
+        <TargetColumn Name="SOLD_TO_FLAG" ProjectionExpression="&quot;SOLD_TO_FLAG&quot;">
+        </TargetColumn>
+        <TargetColumn Name="BILL_TO_FLAG" ProjectionExpression="&quot;BILL_TO_FLAG&quot;">
+        </TargetColumn>
+        <TargetColumn Name="SHIP_TO_FLAG" ProjectionExpression="&quot;SHIP_TO_FLAG&quot;">
+        </TargetColumn>
+        <TargetColumn Name="PAYER_FLAG" ProjectionExpression="&quot;PAYER_FLAG&quot;">
+        </TargetColumn>
+        <TargetColumn Name="INDUSTRY_ID" ProjectionExpression="&quot;INDUSTRY_ID&quot;">
+        </TargetColumn>
+        <TargetColumn Name="INDUSTRY_DESC" ProjectionExpression="&quot;INDUSTRY_DESC&quot;">
+        </TargetColumn>
+        <TargetColumn Name="PARENT_CUSTOMER_ID" ProjectionExpression="&quot;PARENT_CUSTOMER_ID&quot;">
+        </TargetColumn>
+        <TargetColumn Name="PARENT_CUSTOMER_NAME" ProjectionExpression="&quot;PARENT_CUSTOMER_NAME&quot;">
+        </TargetColumn>
+        <TargetColumn Name="MSA_CODE" ProjectionExpression="&quot;MSA_CODE&quot;">
+        </TargetColumn>
+        <TargetColumn Name="MSA_NAME" ProjectionExpression="&quot;MSA_NAME&quot;">
+        </TargetColumn>
+        <TargetColumn Name="MSA_TYPE" ProjectionExpression="&quot;MSA_TYPE&quot;">
+        </TargetColumn>
+        <TargetColumn Name="DMA_CODE" ProjectionExpression="&quot;DMA_CODE&quot;">
+        </TargetColumn>
+        <TargetColumn Name="DMA_NAME" ProjectionExpression="&quot;DMA_NAME&quot;">
+        </TargetColumn>
+        <TargetColumn Name="IRI_MARKET_NAME" ProjectionExpression="&quot;IRI_MARKET_NAME&quot;">
+        </TargetColumn>
+        <TargetColumn Name="IRI_REGION_NAME" ProjectionExpression="&quot;IRI_REGION_NAME&quot;">
+        </TargetColumn>
+        <TargetColumn Name="PAYMENT_TERMS_DESC" ProjectionExpression="&quot;PAYMENT_TERMS_DESC&quot;">
+        </TargetColumn>
+        <TargetColumn Name="COUNTRY" ProjectionExpression="&quot;COUNTRY&quot;">
+        </TargetColumn>
+        <TargetColumn Name="CGP_CUSTOMER_SKEY" ProjectionExpression="&quot;CGP_CUSTOMER_SKEY&quot;">
+        </TargetColumn>
+        <TargetColumn Name="CGP_CUST_SHIP_TO_SKEY" ProjectionExpression="&quot;CGP_CUST_SHIP_TO_SKEY&quot;">
+        </TargetColumn>
+        <TargetColumn Name="MILEAGE" ProjectionExpression="&quot;MILEAGE&quot;">
+        </TargetColumn>
+        <TargetColumn Name="NET_PROFIT_TYPE" ProjectionExpression="&quot;NET_PROFIT_TYPE&quot;">
+        </TargetColumn>
+        <TargetColumn Name="DW_STATUS_FLAG" ProjectionExpression="&quot;DW_STATUS_FLAG&quot;">
+        </TargetColumn>
+        <TargetColumn Name="CALIFORNIA_MILL_TAX_FLAG" ProjectionExpression="&quot;CALIFORNIA_MILL_TAX_FLAG&quot;">
+        </TargetColumn>
+        <TargetColumn Name="CUSTOMER_TYPE_ID" ProjectionExpression="&quot;CUSTOMER_TYPE_ID&quot;">
+        </TargetColumn>
+        <TargetColumn Name="SALES_PERSON_1_SKEY" ProjectionExpression="&quot;SALES_PERSON_1_SKEY&quot;">
+        </TargetColumn>
+        <TargetColumn Name="SALES_PERSON_2_SKEY" ProjectionExpression="&quot;SALES_PERSON_2_SKEY&quot;">
+        </TargetColumn>
+        <TargetColumn Name="SALES_PERSON_3_SKEY" ProjectionExpression="&quot;SALES_PERSON_3_SKEY&quot;">
+        </TargetColumn>
+        <TargetColumn Name="ACCOUNT_ASSIGNMENT_GROUP_ID" ProjectionExpression="&quot;ACCOUNT_ASSIGNMENT_GROUP_ID&quot;">
+        </TargetColumn>
+        <TargetColumn Name="TELEPHONE_AREA_CODE" ProjectionExpression="&quot;TELEPHONE_AREA_CODE&quot;">
+        </TargetColumn>
+        <TargetColumn Name="COUNTY_FIPS_CODE" ProjectionExpression="&quot;COUNTY_FIPS_CODE&quot;">
+        </TargetColumn>
+        <TargetColumn Name="TIME_ZONE_DESC" ProjectionExpression="&quot;TIME_ZONE_DESC&quot;">
+        </TargetColumn>
+        <TargetColumn Name="DST_FLAG" ProjectionExpression="&quot;DST_FLAG&quot;">
+        </TargetColumn>
+        <TargetColumn Name="LONGITUDE_NUMBER" ProjectionExpression="&quot;LONGITUDE_NUMBER&quot;">
+        </TargetColumn>
+        <TargetColumn Name="LATITUDE_NUMBER" ProjectionExpression="&quot;LATITUDE_NUMBER&quot;">
+        </TargetColumn>
+        <TargetColumn Name="MSTR_CUSTOMER_SKEY" ProjectionExpression="&quot;MSTR_CUSTOMER_SKEY&quot;">
+        </TargetColumn>
+        <TargetColumn Name="GEOCODE_LATITUDE" ProjectionExpression="&quot;GEOCODE_LATITUDE&quot;">
+        </TargetColumn>
+        <TargetColumn Name="GEOCODE_LONGITUDE" ProjectionExpression="&quot;GEOCODE_LONGITUDE&quot;">
+        </TargetColumn>
+        <TargetColumn Name="MDM_ACTIVE_FLAG" ProjectionExpression="&quot;MDM_ACTIVE_FLAG&quot;">
+        </TargetColumn>
+        <TargetColumn Name="GEOCODE_LEVEL" ProjectionExpression="&quot;GEOCODE_LEVEL&quot;">
+        </TargetColumn>
+        <TargetColumn Name="DC_STORE_FLAG" ProjectionExpression="&quot;DC_STORE_FLAG&quot;">
+        </TargetColumn>
+        <TargetColumn Name="INDUSTRY1_CODE" ProjectionExpression="&quot;INDUSTRY1_CODE&quot;">
+        </TargetColumn>
+        <TargetColumn Name="INDUSTRY1_DESC" ProjectionExpression="&quot;INDUSTRY1_DESC&quot;">
+        </TargetColumn>
+        <TargetColumn Name="EGP_CONVERT" ProjectionExpression="&quot;EGP_CONVERT&quot;">
+        </TargetColumn>
+        <TargetColumn Name="CUSTOMER_STATUS" ProjectionExpression="&quot;CUSTOMER_STATUS&quot;">
+        </TargetColumn>
+        <TargetColumn Name="DROP_SHIP_CUSTOMER_FLAG" ProjectionExpression="&quot;DROP_SHIP_CUSTOMER_FLAG&quot;">
+        </TargetColumn>
+        <TargetColumn Name="EMPLOYEE_FLAG" ProjectionExpression="&quot;EMPLOYEE_FLAG&quot;">
+        </TargetColumn>
+        <TargetColumn Name="INTER_COMPANY_FLAG" ProjectionExpression="&quot;INTER_COMPANY_FLAG&quot;">
+        </TargetColumn>
+        <TargetColumn Name="STORE_GLN_IDENTIFICATION_VALUE" ProjectionExpression="&quot;STORE_GLN_IDENTIFICATION_VALUE&quot;">
+        </TargetColumn>
+        <TargetColumn Name="WILD_CONVERT" ProjectionExpression="&quot;WILD_CONVERT&quot;">
+        </TargetColumn>
+        <TargetColumn Name="DW_INSERT_SOURCELOAD_SKEY" ProjectionExpression="&quot;DW_INSERT_SOURCELOAD_SKEY&quot;">
+        </TargetColumn>
+        <TargetColumn Name="DW_UPDATE_SOURCELOAD_SKEY" ProjectionExpression="&quot;DW_UPDATE_SOURCELOAD_SKEY&quot;">
+        </TargetColumn>
+        <TargetColumn Name="CREDIT_LIMIT" ProjectionExpression="&quot;CREDIT_LIMIT&quot;">
+        </TargetColumn>
+        <TargetColumn Name="R7_CONV" ProjectionExpression="&quot;R7_CONV&quot;">
+        </TargetColumn>
+        <TargetColumn Name="FIRST_SALE_DT" ProjectionExpression="&quot;FIRST_SALE_DT&quot;">
+        </TargetColumn>
+        <TargetColumn Name="NEW_CUSTOMER_PLANNING_FLAG" ProjectionExpression="&quot;NEW_CUSTOMER_PLANNING_FLAG&quot;">
+        </TargetColumn>
+        <TargetColumn Name="NEW_CUSTOMER_PLANNING_EFF_DT" ProjectionExpression="&quot;NEW_CUSTOMER_PLANNING_EFF_DT&quot;">
+        </TargetColumn>
+        <TargetColumn Name="NEW_CUSTOMER_TRACKING_FLAG" ProjectionExpression="&quot;NEW_CUSTOMER_TRACKING_FLAG&quot;">
+        </TargetColumn>
+        <TargetColumn Name="NEW_CUSTOMER_TRACKING_EFF_DT" ProjectionExpression="&quot;NEW_CUSTOMER_TRACKING_EFF_DT&quot;">
+        </TargetColumn>
+        <TargetColumn Name="NEW_CUSTOMER_TRACKING_PERIODS" ProjectionExpression="&quot;NEW_CUSTOMER_TRACKING_PERIODS&quot;">
+        </TargetColumn>
+        <TargetColumn Name="LAST_SALE_DT" ProjectionExpression="&quot;LAST_SALE_DT&quot;">
+        </TargetColumn>
+        <TargetColumn Name="DW_ACTIVITY_RANK_GROUP" ProjectionExpression="&quot;DW_ACTIVITY_RANK_GROUP&quot;">
+        </TargetColumn>
+        <TargetColumn Name="DW_PROCESS_ID" ProjectionExpression="&quot;DW_PROCESS_ID&quot;">
+        </TargetColumn>
+        <TargetColumn Name="DW_USER_ID" ProjectionExpression="&quot;DW_USER_ID&quot;">
+        </TargetColumn>
+        <TargetColumn Name="COUNTY_TAX_JURISDICTION_CODE" ProjectionExpression="&quot;COUNTY_TAX_JURISDICTION_CODE&quot;">
+        </TargetColumn>
+        <TargetColumn Name="INDUSTRY2_CODE" ProjectionExpression="&quot;INDUSTRY2_CODE&quot;">
+        </TargetColumn>
+        <TargetColumn Name="INDUSTRY2_DESC" ProjectionExpression="&quot;INDUSTRY2_DESC&quot;">
+        </TargetColumn>
+        <TargetColumn Name="TPAC_CONV" ProjectionExpression="&quot;TPAC_CONV&quot;">
+        </TargetColumn>
+        <TargetColumn Name="BREED_CONV" ProjectionExpression="&quot;BREED_CONV&quot;">
+        </TargetColumn>
+        <TargetColumn Name="FP_CONV" ProjectionExpression="&quot;FP_CONV&quot;">
+        </TargetColumn>
+        <TargetColumn Name="HJE_CONV" ProjectionExpression="&quot;HJE_CONV&quot;">
+        </TargetColumn>
+        <TargetColumn Name="WILD_CONV" ProjectionExpression="&quot;WILD_CONV&quot;">
+        </TargetColumn>
+        <TargetColumn Name="CUST_ACTUAL_WHSE" ProjectionExpression="&quot;CUST_ACTUAL_WHSE&quot;">
+        </TargetColumn>
+        <TargetColumn Name="BELL_REGION_NAME" ProjectionExpression="&quot;BELL_REGION_NAME&quot;">
+        </TargetColumn>
+        <TargetColumn Name="BELL_DISTRICT_ID" ProjectionExpression="&quot;BELL_DISTRICT_ID&quot;">
+        </TargetColumn>
+        <TargetColumn Name="BELL_MARKET_NAME" ProjectionExpression="&quot;BELL_MARKET_NAME&quot;">
+        </TargetColumn>
+      </TargetColumns>
+    </Mapping>
+  </Mappings>
+</RepTask>

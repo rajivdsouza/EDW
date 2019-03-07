@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="EDW.DB::CV_T001" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="CV_T001"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="T001 - Company Codes">
+    <resourceUri>T001 - Company Codes</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="T001 - Company Codes">
+  <attributes>
+    <attribute id="MANDT" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MANDT"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="MANDT"/>
+    </attribute>
+    <attribute id="BUKRS" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BUKRS"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="BUKRS"/>
+    </attribute>
+    <attribute id="BUTXT" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BUTXT"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="BUTXT"/>
+    </attribute>
+    <attribute id="ORT01" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ORT01"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="ORT01"/>
+    </attribute>
+    <attribute id="LAND1" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LAND1"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="LAND1"/>
+    </attribute>
+    <attribute id="WAERS" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WAERS"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="WAERS"/>
+    </attribute>
+    <attribute id="SPRAS" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SPRAS"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="SPRAS"/>
+    </attribute>
+    <attribute id="KTOPL" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KTOPL"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="KTOPL"/>
+    </attribute>
+    <attribute id="WAABW" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WAABW"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="WAABW"/>
+    </attribute>
+    <attribute id="PERIV" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PERIV"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="PERIV"/>
+    </attribute>
+    <attribute id="KOKFI" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KOKFI"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="KOKFI"/>
+    </attribute>
+    <attribute id="RCOMP" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RCOMP"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="RCOMP"/>
+    </attribute>
+    <attribute id="ADRNR" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ADRNR"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="ADRNR"/>
+    </attribute>
+    <attribute id="STCEG" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="STCEG"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="STCEG"/>
+    </attribute>
+    <attribute id="FIKRS" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FIKRS"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="FIKRS"/>
+    </attribute>
+    <attribute id="XFMCO" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XFMCO"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XFMCO"/>
+    </attribute>
+    <attribute id="XFMCB" order="17" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XFMCB"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XFMCB"/>
+    </attribute>
+    <attribute id="XFMCA" order="18" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XFMCA"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XFMCA"/>
+    </attribute>
+    <attribute id="TXJCD" order="19" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TXJCD"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="TXJCD"/>
+    </attribute>
+    <attribute id="FMHRDATE" order="20" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FMHRDATE"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="FMHRDATE"/>
+    </attribute>
+    <attribute id="BUVAR" order="21" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BUVAR"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="BUVAR"/>
+    </attribute>
+    <attribute id="FDBUK" order="22" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FDBUK"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="FDBUK"/>
+    </attribute>
+    <attribute id="XFDIS" order="23" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XFDIS"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XFDIS"/>
+    </attribute>
+    <attribute id="XVALV" order="24" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XVALV"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XVALV"/>
+    </attribute>
+    <attribute id="XSKFN" order="25" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XSKFN"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XSKFN"/>
+    </attribute>
+    <attribute id="KKBER" order="26" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KKBER"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="KKBER"/>
+    </attribute>
+    <attribute id="XMWSN" order="27" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XMWSN"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XMWSN"/>
+    </attribute>
+    <attribute id="MREGL" order="28" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MREGL"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="MREGL"/>
+    </attribute>
+    <attribute id="XGSBE" order="29" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XGSBE"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XGSBE"/>
+    </attribute>
+    <attribute id="XGJRV" order="30" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XGJRV"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XGJRV"/>
+    </attribute>
+    <attribute id="XKDFT" order="31" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XKDFT"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XKDFT"/>
+    </attribute>
+    <attribute id="XPROD" order="32" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XPROD"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XPROD"/>
+    </attribute>
+    <attribute id="XEINK" order="33" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XEINK"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XEINK"/>
+    </attribute>
+    <attribute id="XJVAA" order="34" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XJVAA"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XJVAA"/>
+    </attribute>
+    <attribute id="XVVWA" order="35" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XVVWA"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XVVWA"/>
+    </attribute>
+    <attribute id="XSLTA" order="36" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XSLTA"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XSLTA"/>
+    </attribute>
+    <attribute id="XFDMM" order="37" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XFDMM"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XFDMM"/>
+    </attribute>
+    <attribute id="XFDSD" order="38" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XFDSD"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XFDSD"/>
+    </attribute>
+    <attribute id="XEXTB" order="39" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XEXTB"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XEXTB"/>
+    </attribute>
+    <attribute id="EBUKR" order="40" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="EBUKR"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="EBUKR"/>
+    </attribute>
+    <attribute id="KTOP2" order="41" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KTOP2"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="KTOP2"/>
+    </attribute>
+    <attribute id="UMKRS" order="42" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="UMKRS"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="UMKRS"/>
+    </attribute>
+    <attribute id="BUKRS_GLOB" order="43" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BUKRS_GLOB"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="BUKRS_GLOB"/>
+    </attribute>
+    <attribute id="FSTVA" order="44" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FSTVA"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="FSTVA"/>
+    </attribute>
+    <attribute id="OPVAR" order="45" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="OPVAR"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="OPVAR"/>
+    </attribute>
+    <attribute id="XCOVR" order="46" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XCOVR"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XCOVR"/>
+    </attribute>
+    <attribute id="TXKRS" order="47" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TXKRS"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="TXKRS"/>
+    </attribute>
+    <attribute id="WFVAR" order="48" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WFVAR"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="WFVAR"/>
+    </attribute>
+    <attribute id="XBBBF" order="49" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XBBBF"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XBBBF"/>
+    </attribute>
+    <attribute id="XBBBE" order="50" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XBBBE"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XBBBE"/>
+    </attribute>
+    <attribute id="XBBBA" order="51" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XBBBA"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XBBBA"/>
+    </attribute>
+    <attribute id="XBBKO" order="52" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XBBKO"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XBBKO"/>
+    </attribute>
+    <attribute id="XSTDT" order="53" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XSTDT"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XSTDT"/>
+    </attribute>
+    <attribute id="MWSKV" order="54" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MWSKV"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="MWSKV"/>
+    </attribute>
+    <attribute id="MWSKA" order="55" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MWSKA"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="MWSKA"/>
+    </attribute>
+    <attribute id="IMPDA" order="56" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="IMPDA"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="IMPDA"/>
+    </attribute>
+    <attribute id="XNEGP" order="57" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XNEGP"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XNEGP"/>
+    </attribute>
+    <attribute id="XKKBI" order="58" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XKKBI"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XKKBI"/>
+    </attribute>
+    <attribute id="WT_NEWWT" order="59" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WT_NEWWT"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="WT_NEWWT"/>
+    </attribute>
+    <attribute id="PP_PDATE" order="60" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PP_PDATE"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="PP_PDATE"/>
+    </attribute>
+    <attribute id="INFMT" order="61" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="INFMT"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="INFMT"/>
+    </attribute>
+    <attribute id="FSTVARE" order="62" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FSTVARE"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="FSTVARE"/>
+    </attribute>
+    <attribute id="KOPIM" order="63" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KOPIM"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="KOPIM"/>
+    </attribute>
+    <attribute id="DKWEG" order="64" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DKWEG"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="DKWEG"/>
+    </attribute>
+    <attribute id="OFFSACCT" order="65" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="OFFSACCT"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="OFFSACCT"/>
+    </attribute>
+    <attribute id="BAPOVAR" order="66" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BAPOVAR"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="BAPOVAR"/>
+    </attribute>
+    <attribute id="XCOS" order="67" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XCOS"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XCOS"/>
+    </attribute>
+    <attribute id="XCESSION" order="68" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XCESSION"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XCESSION"/>
+    </attribute>
+    <attribute id="XSPLT" order="69" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XSPLT"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XSPLT"/>
+    </attribute>
+    <attribute id="SURCCM" order="70" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SURCCM"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="SURCCM"/>
+    </attribute>
+    <attribute id="DTPROV" order="71" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DTPROV"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="DTPROV"/>
+    </attribute>
+    <attribute id="DTAMTC" order="72" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DTAMTC"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="DTAMTC"/>
+    </attribute>
+    <attribute id="DTTAXC" order="73" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DTTAXC"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="DTTAXC"/>
+    </attribute>
+    <attribute id="DTTDSP" order="74" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DTTDSP"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="DTTDSP"/>
+    </attribute>
+    <attribute id="FM_DERIVE_ACC" order="75" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FM_DERIVE_ACC"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="FM_DERIVE_ACC"/>
+    </attribute>
+    <attribute id="DTAXR" order="76" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DTAXR"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="DTAXR"/>
+    </attribute>
+    <attribute id="XVATDATE" order="77" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XVATDATE"/>
+      <keyMapping columnObjectName="T001 - Company Codes" columnName="XVATDATE"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

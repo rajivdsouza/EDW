@@ -1,0 +1,47 @@
+<RepTask Name="REP_T001T" Description="" Type="REALTIME" RepVersion="2.0">
+  <SourceObjects SourceType="OracleECCAdapter" TTFullyQualifiedName="FALSE" VTFullyQualifiedName="FALSE" RemoteSourceName="RS_ECC_QAS" VirtualTableSchema="">
+    <SourceObject RemoteObjectUniqueName="T001T" SourceDisplayName="T001T - Company code-dependent texts">
+      <SourceColumns>
+        <SourceColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="true" PartOfPrimaryKey="true">
+        </SourceColumn>
+        <SourceColumn Name="BUKRS" Datatype="NVARCHAR" Length="4" Nullable="true" PartOfPrimaryKey="true">
+        </SourceColumn>
+        <SourceColumn Name="TXTNA" Datatype="NVARCHAR" Length="16" Nullable="true" PartOfPrimaryKey="true">
+        </SourceColumn>
+        <SourceColumn Name="LTEXT" Datatype="NVARCHAR" Length="50" Nullable="true" PartOfPrimaryKey="false">
+        </SourceColumn>
+      </SourceColumns>
+    </SourceObject>
+    <Annotations Key="sap.im.properties">
+      <Annotation Key="cdc" Value="true"/>
+    </Annotations>
+  </SourceObjects>
+  <TargetObjects>
+    <TargetObject ObjectName="T001T - Company code-dependent texts" Type="TABLE">
+      <TargetColumns>
+        <TargetColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="TRUE" PartOfPrimaryKey="true">
+        </TargetColumn>
+        <TargetColumn Name="BUKRS" Datatype="NVARCHAR" Length="4" Nullable="TRUE" PartOfPrimaryKey="true">
+        </TargetColumn>
+        <TargetColumn Name="TXTNA" Datatype="NVARCHAR" Length="16" Nullable="TRUE" PartOfPrimaryKey="true">
+        </TargetColumn>
+        <TargetColumn Name="LTEXT" Datatype="NVARCHAR" Length="50" Nullable="true" PartOfPrimaryKey="false">
+        </TargetColumn>
+      </TargetColumns>
+    </TargetObject>
+  </TargetObjects>
+  <Mappings>
+    <Mapping ObjectName="T001T - Company code-dependent texts" RemoteObjectUniqueName="T001T" ReplicationBehavior="InitAndRealtime" VTObjectName="VT_T001T - Company code-dependent texts">
+      <TargetColumns>
+        <TargetColumn Name="MANDT" ProjectionExpression="&quot;MANDT&quot;">
+        </TargetColumn>
+        <TargetColumn Name="BUKRS" ProjectionExpression="&quot;BUKRS&quot;">
+        </TargetColumn>
+        <TargetColumn Name="TXTNA" ProjectionExpression="&quot;TXTNA&quot;">
+        </TargetColumn>
+        <TargetColumn Name="LTEXT" ProjectionExpression="&quot;LTEXT&quot;">
+        </TargetColumn>
+      </TargetColumns>
+    </Mapping>
+  </Mappings>
+</RepTask>
